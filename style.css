@@ -1,0 +1,227 @@
+* {
+  font-family: Manrope, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Estilização do Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/*Estilização simples do Body*/
+body{
+  background-color: #a1a1a1;
+}
+
+/*Estilização geral das sections*/
+section {
+  padding: 20px;
+}
+
+#quem-sou, #formacao, #portfolio, #contato {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*Estilizando o botão que leva a página o topo. */
+#btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 16px;
+}
+
+#btn-topo:hover {
+  background-color: #555;
+}
+
+/*Estilização da caixa onde estão as formações. */
+.course{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+/*Estilização da section Sobre mim.*/
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  gap: 3rem;
+}
+
+.about p{
+  text-align: justify;
+}
+
+
+.about img{
+  width: 20rem;
+  border-radius: 50%;
+}
+
+
+/*Estilizando a section onde estão os cards de portfólio. */
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 20px;
+  width: 90%;
+}
+
+.container a{
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  height: 270px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  background-color: #555;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  margin: 16px;
+  font-size: 1.5em;
+  color: #00d400;
+}
+
+.card p {
+  margin: 0 16px 16px 16px;
+  font-size: 1em;
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/*Estilização da área de formulário.*/
+
+.contact-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #979797;
+  
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00d400;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: white;
+  color: #00d400;
+}
+
+/*Aplicando uma certa responsividade.*/
+@media (max-width: 600px) {
+  nav a {
+      margin: 10px 0;
+      display: block;
+      text-align: center;
+  }
+
+  .about{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 3rem;
+  }
+
+  .about img{
+    width: 50%;
+    border-radius: 5rem;
+  }
+
+  .container{
+    flex-wrap: wrap;
+  }
+}

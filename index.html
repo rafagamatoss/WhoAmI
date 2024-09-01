@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Ráfaga Matos</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#quem-sou">Quem sou</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="quem-sou">
+        <h2>Quem sou</h2>
+        <div class="about">
+          <p>Meu nome é Ráfaga Matos e sou natural de Jequitinhonha, interior de Minas Gerais. Eu sou designer gráfico e estou em migração de carreira. Eu amo música e artes em geral, desde artes plásticas quanto teatro e dança. Atualmente moro em Belo Horizonte.</p>
+
+          <img src="/src/profile-Picture.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação</h2>
+       <div class="course">
+        <h4>One Bit Code - Full Stack</h4>
+        <p>Curso de Full Stack com grande foco em grandes tecnologias como Javascript, React, Git e GitHub entre outras.</p>
+       </div>
+
+       <div class="course">
+        <h4>Infinity School - Full Stack</h4>
+        <p>Curso de Full Stack abordando Python, Javascript, React, Node.js entre outros.
+        </p>
+      </div>
+
+      <div class="course">
+        <h4>Cod3r - Web Developer</h4>
+        <p>Curso realizado pela Udemy com foco em desenvolimento Web. Conteúdos teóricos e práticos indo desde lógica e programação à projetos finais.</p>
+      </div>
+
+      <div class="course">
+        <h4>Uninter - Análise e Desenvolvimento de Sistemas</h4>
+        <p>Cursando o que equivale ao segundo período. O curso compacta bastante em poucos periodos e módulos bastante conteúdo e prática.</p>
+      </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="container">
+          <a href="https://github.com/rafagamatoss/IMCCalculator" target="_blank">
+            <div class="card">
+              <img src="/src/Sem título.png" alt="Projeto 1">
+              <h3>IMCCalculator</h3>
+              <p>Uma calculadora simples para cálculo de IMC.</p>
+          </div>
+          </a>
+         
+          <a href="https://github.com/rafagamatoss/LandingPage" target="_blank">
+            <div class="card">
+              <img src="/src/Sem título (cópia).png" alt="Projeto 2">
+              <h3>Lading Page</h3>
+              <p>Criação de Landing Page em módulo de Bootstrap com Sass.</p>
+          </div>
+          </a>
+         
+          <a href="https://github.com/rafagamatoss/LandingPage" target="_blank">
+            <div class="card">
+              <img src="/src/PRINT SAIDA 4.1.png" alt="Projeto 3">
+              <h3>Library</h3>
+              <p>Estudo de Arrays em Python.</p>
+          </div>
+          </a>
+          
+      </div>
+        
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <button id="btn-topo" onclick="scrollToTop()">Topo</button>
+
+    <script>
+      function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+  </script>
+
+</body>
+</html>
